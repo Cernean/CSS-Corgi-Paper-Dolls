@@ -75,8 +75,15 @@ main {
     display: block;
     margin: 0 1em 0.5em 0;
 }
-.sunglasses, .funny-glasses {
+.funny-glasses {
+    position: relative;
+    top: -110px;
+    left: 262px;
     width: 80px;
+}
+.monocle {
+    width: 80px;
+    position: absolute;
 }
 .monocle {
     width: 40px;
@@ -96,6 +103,9 @@ main {
     transform: rotate(40deg);
 }
 .bandana {
+    position:absolute;
+    top: 180px;
+    left: 100px;
     width: 80px;
     transform: rotate(10deg);
 }
@@ -106,7 +116,13 @@ main {
     height: auto;
 }
 .pawprint {
+    position:fixed;
     width: 45px;
+    top: 45px;
+    left: 65px;
+}
+.luna {
+    position: absolute;
 }
 .sticky { 
     overflow: auto;
@@ -132,6 +148,7 @@ main {
 }
 .top-hat {
     position: relative;
+    z-index: 1;
     left: 133px;
     top: -10px;
     width: 40px;
